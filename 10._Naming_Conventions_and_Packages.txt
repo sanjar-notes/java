@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-09T11:03:09+05:30
+
+====== 10. Naming Conventions and Packages ======
+Created Sunday 09 August 2020
+
+* Use conventions to make life easier for you and others.
+Things to name:
+1. Packages
+	a. Lowercase
+	b. Unique
+	c. Replace invalid characters(like -) in a domain name should be replaced by an underscore.
+	d. Domain starting with a number should starting with a number should have an underscore first.
+	e. Domain name components that are Java keywords need to start with an underscores.
+	{{./pasted_image.png}}
+{{./pasted_image001.png}} 
+--------------------
+2. Class Names
+	a. camelCase
+	b. Should be nouns(they represent things)
+	c. Start with a capital letter
+{{./pasted_image002.png}}
+--------------------
+3. Interface names
+	a. Capitalized like class names(CamelCase)
+	b. Consider what objects will be able to do once they implement
+{{./pasted_image003.png}}
+--------------------
+4. Method names
+	a. mixedCase
+	b. Often verbs
+{{./pasted_image004.png}}
+--------------------
+5. Constant names
+	a. ALL UPPER_CASE
+	b. Separate words using underscore
+{{./pasted_image005.png}}
+--------------------
+6. Variable/field names
+	a. mixed case
+	b. Meaningful and indicative
+	c. Start with a lower_case letter
+	d. Do not use underscores
+Examples:
+* i
+* league
+* boxLength
+* sydneySwans
+--------------------
+7. Type parameters
+	a. Single letter
+	b. Capital letter
+{{./pasted_image006.png}}

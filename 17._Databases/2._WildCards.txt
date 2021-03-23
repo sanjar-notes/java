@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-15T10:39:01+05:30
+
+====== 2. WildCards ======
+Created Saturday 15 August 2020
+
+1. % for a string of length 0 or more
+2. _ for a single character

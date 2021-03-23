@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-01T03:41:52+05:30
+
+====== 3. Primitive Types ======
+Created Saturday 01 August 2020
+
+There are 4 types of primary data types:
+1. Boolean - bool(true and false)
+2. Numerical - **auto cast is off by default**
+	a. byte, short, int, long 
+	b. float, double, can use underscores for long values. Scientific notation is also acceptable.
+3. Character - char (4 byte unicode)

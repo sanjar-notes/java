@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-07T15:01:12+05:30
+
+====== 2. Defining a class ======
+Created Thursday 07 January 2021
+
+* Classes(at least top-level) must be defined in their own file.
+* Name of the file must be ''topLevelClassName.java''
+e.g ''Car.java''
+{{{code: lang="java" linenumbers="True"
+public class Car
+{
+}
+}}}
+
+
+=== Fields ===
+* Classes store data in fields. These fields may be any object, including of the same class.
+* They reside in the class but outside any function(including constructors).
+* Fields can do any computation that ''return''s a value for their initialization.
+{{{code: lang="java" linenumbers="True"
+public class Car
+{
+	public String a = "1" + ((Integer)2).toString(); // This is valid
+	
+	// This is an error, returns nothing
+	if(true)
+	{
+	}
+}
+}}}

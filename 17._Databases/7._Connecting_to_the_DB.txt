@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-16T10:29:05+05:30
+
+====== 7. Connecting to the DB ======
+Created Sunday 16 August 2020
+
+To connect to the DB and do basic queries, do the following:
+{{{code: lang="java" linenumbers="True"
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+try
+{
+	Connection conn = DriverManager.getConnection("jdbc:sqlite:test.db");
+	Statement statement = conn.createStatement();
+	statement.execute("SELECT* FROM contacts");   //
+	ResultSet results = statement.getResultSet(); // or results = statement.executeQuery("QUERY...");
+	conn.close();
+	statement.close();
+	results.close();
+} catch(SQLException e)
+{}
+}}}
+
+
+There are three resources here:
+1. Connection - the connection
+2. Statement - we write statements here
+3. ResultSet - we read the results from this object, row by row
+
+* We perform the queries using the execute() method. We get back the result using the statement.getResultSet() method. One query, one result is the rule followed by the result.
+* We can use the statement.executeQuery() to directly get back the ResultSet
+* The result is seldom queried by the field name, it is mostly queried by the index, because names can change.
+* We need to close all 3 resources, make it a habit to close or use try-with-resources.
+* We can write functions to avoid repetitive work.
+[[../code/intro_jdbc/src/App.java]]

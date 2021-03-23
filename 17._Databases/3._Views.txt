@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-15T10:55:07+05:30
+
+====== 3. Views ======
+Created Saturday 15 August 2020
+
+* It is a persistent(stored) query.
+{{{code: lang="sql" linenumbers="True"
+CREATE VIEW view_name AS 
+SELECT *...
+}}}
+

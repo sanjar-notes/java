@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-13T14:46:01+05:30
+
+====== 3. Interrupt and join ======
+Created Thursday 13 August 2020
+
+* .interrupt() terminates the thread.
+* t.join() - the base thread waits(pauses) for t to finish, then resumes.

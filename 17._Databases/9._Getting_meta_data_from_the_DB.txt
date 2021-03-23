@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-16T19:10:57+05:30
+
+====== 9. Getting meta data from the DB ======
+Created Sunday 16 August 2020
+
+* This can differ for different databases. Lookup the documentation.
+For meta data, we need an additional different resource, called ResultSetMetaData
+{{{code: lang="java" linenumbers="True"
+ResultSetMetaData meta = results.getMetaData(); // the meta data
+int colNums = meta.getColumnCount();
+for(int i=1; i<=colNums; i++)
+	sysout(meta.getColumnName(i)); // 1 to colNums
+}}}
+
+[[../code/music_db/src/Datasource.java|Line 128 ../code/music_db/src/Datasource.java]]

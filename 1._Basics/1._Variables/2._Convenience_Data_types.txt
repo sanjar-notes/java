@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-01T03:45:29+05:30
+
+====== 2. Convenience Data types ======
+Created Saturday 01 August 2020
+
+String
+array []

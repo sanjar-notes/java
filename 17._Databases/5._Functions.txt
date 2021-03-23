@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-15T14:05:15+05:30
+
+====== 5. Functions ======
+Created Saturday 15 August 2020
+
+1. count(field)
+2. avg(field)
+3. max(field)
+4. min(field)
+5. sum(field)
+{{{code: lang="sql" linenumbers="True"
+select f from artists;
+}}}
+
+--------------------
+* For distinct count, do
+{{{code: lang="sql" linenumbers="True"
+SELECT COUNT(DISTINCT name) FROM artists where ...
+}}}

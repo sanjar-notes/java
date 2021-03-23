@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-09T04:16:34+05:30
+
+====== 3. Type parameter ======
+Created Sunday 09 August 2020
+
+[[./generic_classes_using_type_T/src/Team.java]]
+Syntax:
+{{{code: lang="java" linenumbers="True"
+public class Team<T>
+{
+	// use T somehow, but not directly
+}
+}}}
+
+* We can also restrict the values T can take: These are called bounded type parameters. This syntax works only for the subclasses of Player.
+{{{code: lang="java" linenumbers="True"
+public class Team<T extends Player> // sets upperbound for the value T can take
+}}}
+
+--------------------
+* The argument for the class can be a class or an interface
+* Interfaces can also have type parameters
+* We can have multiple bounds
+* Syntax for multiple bounds - ampersand
+{{{code: lang="java" linenumbers="True"
+public class<T extends Player & Coach & Manager>{} // Class first, then interfaces
+// Coach and Manager are interfaces implemented by T here
+}}}
+
+--------------------
+* Comparable is a useful interface
+--------------------
+We can have multiple type parameters too:
+{{{code: lang="java" linenumbers="True"
+public class Team<U extends Player, T extends Team>{
+}}}
+
+The declaration/instantiation would be:
+{{{code: lang="java" linenumbers="True"
+Team<FootallPlayer, Team<FootballPlayer> k = new Team<>();
+}}}

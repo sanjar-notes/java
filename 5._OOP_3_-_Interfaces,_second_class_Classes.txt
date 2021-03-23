@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-01-07T15:51:41+05:30
+
+====== 5. OOP 3 - Interfaces, second class Classes ======
+Created Thursday 07 January 2021
+

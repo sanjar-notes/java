@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-09T11:48:32+05:30
+
+====== 1. Creating our own package ======
+Created Sunday 09 August 2020
+
+=== Steps for making a package ===
+1. Make a folder(name should be same as package name). Name it **rootDir**
+2. Write the classes inside this folder.
+3. Each class must have **package rootDir.curdir;** on top of it.
+	e.g If the **rootDir** is itself the packges, then package declaration will be ''package rootDir;''
+The directory is now a package.
+
+=== Details ===
+* Classes within a package can freely access each other, assuming proper modifiers are used.
+* Packages may be nested to any depth. The rules remain the same.
+* Name of the package directory starts from the root directory.
+
+[[./making_own_package/src/series/sum.java|Example Code]]

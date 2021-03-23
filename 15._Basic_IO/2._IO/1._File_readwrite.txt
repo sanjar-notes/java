@@ -1,0 +1,63 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-11T12:32:23+05:30
+
+====== 1. File readwrite ======
+Created Tuesday 11 August 2020
+
+**Reading**
+{{{code: lang="java" linenumbers="True"
+FileReader loc_file = null;
+try{
+	Scanner loc_file = new FileReader("locations.txt");
+	while(loc_file.ready())
+		System.out.print((char)loc_file.read()); // character by character
+}
+catch(IOException e)
+{}
+finally{
+	if(loc_file!=null)
+		loc_file.close();
+}
+}}}
+
+**Read using scanner - provide the file as stream in scanner**
+	{{./pasted_image.png}} 
+--------------------
+**Writing**
+{{{code: lang="java" linenumbers="True"
+FileWriter loc_file = null;
+try{
+	loc_file = new FileWriter("locations.txt");
+	String[] messages = ["Get Here", "I'm good","Go east"];
+	for(String msg: messages)
+		loc_file.write(msg + "\n");
+}
+catch(IOException e)
+{}
+finally{
+	if(loc_file!=null)
+		loc_file.close();
+}
+}}}
+
+* new file locations.txt is created, or overwritten(if already existing)
+{{{code: lang="markdown" linenumbers="True"
+Get Here
+I'm good
+Go east
+}}}
+
+--------------------
+New way to access files - Try resoruces block
+{{{code: lang="java" linenumbers="True"
+try(FileWriter loc_file = new FileWriter("locations.txt");
+	FileWriter loc_file = new FileWriter("locations2.txt"))
+{
+	String[] messages = ["Get Here", "I'm good","Go east"];
+	for(String msg: messages)
+		loc_file.write(msg + "\n");
+}
+catch(IOException e){}
+// file is automatically closed, null close exception, if there, is suppressed
+}}}

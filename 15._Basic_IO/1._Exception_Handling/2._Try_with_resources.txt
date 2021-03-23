@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-16T00:12:59+05:30
+
+====== 2. Try with resources ======
+Created Sunday 16 August 2020
+
+* Sometimes, we need a try block even if no errors will be thrown. Examples include, opening files, connecting to a database etc. 
+* The try with resources is a new(from Java 8 onwards) syntax to automatically close resources when the try block exits(either successfully or by exception).
+Syntax:
+{{{code: lang="java" linenumbers="True"
+try(File myObj=new File("wdhkwbd"))
+{}
+catch(){};
+}}}
+
+* We can have multiple statements, separated by semi-colon.
+{{{code: lang="java" linenumbers="True"
+try(FileWriter loc_file = new FileWriter("locations.txt");
+	FileWriter loc_file = new FileWriter("locations2.txt"))
+{
+	String[] messages = ["Get Here", "I'm good","Go east"];
+	for(String msg: messages)
+		loc_file.write(msg + "\n");
+}
+catch(IOException e){}
+// file is automatically closed, null close exception, if there, is suppressed
+}}}

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-12T06:41:18+05:30
+
+====== 2. BufferedReader ======
+Created Wednesday 12 August 2020
+
+* This takes chunks of file in RAM
+{{{code: lang="java" linenumbers="True"
+Scanner file_read = new Scanner(new BufferedReader(new FileReader("loc.md")));
+// read normally
+file_read.close();
+}}}
+

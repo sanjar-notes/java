@@ -1,0 +1,22 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-12T23:33:34+05:30
+
+====== 1. Intro to Concurrency ======
+Created Wednesday 12 August 2020
+
+* **Process** - A unit of execution that has its own memory space
+* Each instance of Java runs as a process
+* Process and applications are generally used interchangeably
+* Heap memory isn't shared between Java processes, each have their own.
+--------------------
+* A **thread** is a unit of execution within a process.
+* Threads for a process share resources like files and memory of the process.
+* **Thread Stack **- In addition to the process's heap, each thread has got its thread stack.
+--------------------
+Why do multithreading?
+There are two reasons:
+1. To utilize CPU when tasks pause for some resource
+2. An API wants us to provide one
+* Concurrency - Tasks don't need to fully complete, in order for other tasks to start
+* When doing concurreny, we are at the mercy of the JVM and the OS. Outputs for the same code can vary for different machines because of this.

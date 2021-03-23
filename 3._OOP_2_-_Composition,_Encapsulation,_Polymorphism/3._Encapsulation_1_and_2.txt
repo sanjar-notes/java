@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-03T04:25:22+05:30
+
+====== 3. Encapsulation 1 and 2 ======
+Created Monday 03 August 2020
+
+* It is the mechanism for enforcing restrictions, i.e achieving abstraction.
+* We are not talking about security, but of access(Classes outside of the current class cannot change class components anyway).
+
+Encapsulation solves two problems:
+1. Voids the chance of inadvertent changes from the programmer - access is cut off
+2. Reduces the impact of change. We can change the inner code, while the interface remains the same.
+
+Extras:
+1. We can validate input.
+[[./game/src]]

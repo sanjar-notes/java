@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-10T11:32:03+05:30
+
+====== 3. Maps ======
+Created Monday 10 August 2020
+
+{{./pasted_image.png?width=400}}
+How are these different - the order of key-value pairs is different.
+* HashMap - depends on hash value
+* LinkedMap - insertion order
+* TreeMap - ascending order
+--------------------
+Basic methods for the Map interface:
+1. **.put**(key, value)
+2. **.remove**(key) - to remove key-value pair
+3. **.keySet**() - get a list of keys for the map

@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-07T10:29:44+05:30
+
+====== 7. Inner Classes ======
+Created Friday 07 August 2020
+
+* It is possible to **nest** a class inside another in Java.
+* There are 4 types of nested classes:
+	1. Static nested class - only for packaging convenience.
+	2. Non-static nested. There are 2 types:
+		a. Nested member class - aka inner class.
+		b. Local class - a class inside a block scope.
+		c. Anonymous class - class without a name.
+* Nested classes are packages in their containing class instead of the package.

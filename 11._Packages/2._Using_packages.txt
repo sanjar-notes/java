@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-09T15:14:26+05:30
+
+====== 2. Using packages ======
+Created Sunday 09 August 2020
+
+* We can only classes classes, nothing less like a function. But not their contents(as Java is strictly OO, methods have no meaning without an instance).
+To use packages, import them:
+1. Using asterisk - gets everything, java.util.(star) 
+2. Using the name - java.util.Scanner;
+3. Use full name in code
+Syntax:
+{{{code: lang="java" linenumbers="True"
+import java.util.*;
+import java.util.Scanner;
+public class X{
+	public static void main(String[] args)
+	{
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+	}
+}
+}}}
+
+--------------------
+* If the package has already been imported, you can use the contents of the class using className.content.
+{{{code: lang="java" linenumbers="True"
+import series.sum;
+public class X{
+	public static void main(String[] args)
+	{
+		System.out.println(sum.nSum(10));
+	}
+}
+}}}
+
+[[../1._Creating_our_own_package/making_own_package/src/App.java]]

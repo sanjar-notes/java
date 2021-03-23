@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-09T15:41:55+05:30
+
+====== 1. Inner classes scope ======
+Created Sunday 09 August 2020
+
+* The scope is intuitive and the inner classes have access to all the variables in their parent block.

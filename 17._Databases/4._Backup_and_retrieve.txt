@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-15T11:04:13+05:30
+
+====== 4. Backup and retrieve ======
+Created Saturday 15 August 2020
+
+* .backup backup_name → Create a backup of the db
+* .restore backup_name → restore the db
