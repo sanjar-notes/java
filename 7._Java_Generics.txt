@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-09T03:04:04+05:30
-
-====== 7. Java Generics ======
-Created Sunday 09 August 2020
-

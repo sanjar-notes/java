@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-03T18:47:04+05:30
-
-====== zMaster Challenge ======
-Created Monday 03 August 2020
-
-* It'd be better to use an array. But that has not been discussed.

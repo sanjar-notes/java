@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-09T16:16:42+05:30
-
-====== 13. Static and Final ======
-Created Sunday 09 August 2020
-
-[[4. Data Structures in Java:2. Advanced data structures]]

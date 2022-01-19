@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-10-28T20:35:54+05:30
-
-====== Home ======
-Created Wednesday 28 October 2020
-
-[[http://tutorials.jenkov.com/java/index.html|A very good resource for Java]]

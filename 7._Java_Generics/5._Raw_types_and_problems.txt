@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-09T10:54:53+05:30
-
-====== 5. Raw types and problems ======
-Created Sunday 09 August 2020
-
-* Raw types don't have type checking.
-* The errors are there only at compile time, so it's difficult to debug. The code will compile successfully, but will stop when run.

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-12T22:45:45+05:30
-
-====== 1. Read Write ======
-Created Wednesday 12 August 2020
-

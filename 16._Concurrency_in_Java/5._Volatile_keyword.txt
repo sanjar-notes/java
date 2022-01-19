@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-14T10:49:15+05:30
-
-====== 5. Volatile keyword ======
-Created Friday 14 August 2020
-
-* To avoid thread cache copy(on some systems), use volatile after the access modifier of the variable.
-{{./pasted_image.png}}

@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-03T01:01:01+05:30
-
-====== 6. The Object class ======
-Created Monday 03 August 2020
-
-* Every class we make is implicitly inheriting from the java.lang.Object class.
-* This can be seen by observing autocomplete suggestions inside any class.

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-08T04:34:23+05:30
-
-====== 8. Abstract Classes ======
-Created Saturday 08 August 2020
-
